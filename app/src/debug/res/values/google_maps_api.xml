@@ -5,7 +5,7 @@
 
     To get one, follow this link, follow the directions and press "Create" at the end:
 
-https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=F1:29:8C:66:6B:1D:D7:5B:B3:D6:77:29:75:29:95:6D:73:2D:60:CF%3Bcom.example.geoalarm
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=D3:E4:85:5F:E3:61:29:1D:2E:3D:52:46:7D:4E:4C:CC:85:F3:5C:D9%3Bcom.example.geoalarm
 
     You can also add your credentials to an existing key, using this line:
     F1:29:8C:66:6B:1D:D7:5B:B3:D6:77:29:75:29:95:6D:73:2D:60:CF;com.example.geoalarm
@@ -14,5 +14,5 @@ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend
     string in this file.
     --></string>
 
-    <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyCYez0aZqZWGlRj0QW4hHdJkQwwOghFdHs</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyCIiqarWuUHq9GOtbWgTXneUGcPLk65qRY</string>
 </resources>
