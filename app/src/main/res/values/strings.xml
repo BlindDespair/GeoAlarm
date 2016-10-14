@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">GeoAlarm</string>
-    <string name="title_activity_main">Map</string>
+    <string name="app_name">Geolocation Alarm and Reminder</string>
+    <string name="title_activity_main">Geolocation Alarm and Reminder</string>
+    <string name="title_activity_alarm_alert">AlarmAlertActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_alarm_preferences">AlarmPreferencesActivity</string>
+    <string name="title_activity_pref">PrefActivity</string>
+    <string name="title_activity_alarm_preference">Settings</string>
+    <string name="settings_button">Settings</string>
+    <string name="not_able_to_get_location">Location services disabled</string>
+    <string name="not_able_to_get_location_alert_message">GeoAlarm needs access to your location. Please turn on location access.</string>
+    <string name="not_able_to_get_location_alert_negative_button">Cancel</string>
+    <string name="not_able_to_get_location_alert_positive_button">Settings</string>
+    <string name="distance">Distance</string>
+    <string name="kilometer">kilometer</string>
+    <string name="kilometers">kilometers</string>
+    <string name="meters">meters</string>
+    <string name="no_location_data">Can\'t get location data. Not able to calculate distance.</string>
+    <string name="warning">Warning!</string>
+    <string name="warning_alert_message">Setting alarm trigger distance less than 1 km may cause not worked or delayed alarm if you\'re moving in some kind of transport. It may happen because of high speed or not enough precise location data.</string>
+    <string name="warning_alert_ok">OK</string>
+    <string name="warning_do_not_show_again">Do not show again.</string>
+    <string name="alarm_trigger_distance">Alarm trigger distance</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="vibration">Vibration</string>
+    <string name="alarm_triggers_in">Alarm will sound in</string>
+    <string name="stop_alarm">Stop</string>
+    <string name="reminder_title">Reminder</string>
+    <string name="reminder_text_hint">Enter your reminder text</string>
+    <string name="delay">Delay</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="save_button">Save</string>
+    <string name="marker_reminder_default">Reminder is not set.</string>
+    <string name="timer_alarm_delayed_for">Alarm delayed for: </string>
+    <string name="close_button">Close</string>
 
 </resources>

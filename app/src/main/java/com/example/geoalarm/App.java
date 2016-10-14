@@ -1,5 +1,6 @@
 package com.example.geoalarm;
 
+import android.app.ActivityManager;
 import android.app.Application;
 import android.content.Context;
 
@@ -9,12 +10,32 @@ import android.content.Context;
 public class App extends Application {
     private static Context context;
 
-    public static Context getContext() {
-        return context;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        context = getApplicationContext();
     }
 
-    public static void setContext(Context mContext) {
-        context = mContext;
+    public static Context getContext() {
+            return context;
+    }
+
+    public static boolean isAlarmServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static String cutReminderText(String str, int maxLength, int cutToLength){
+        if(str.length() > maxLength){
+            return str.substring(0,cutToLength) + "...";
+        }
+        return str;
     }
 
 }

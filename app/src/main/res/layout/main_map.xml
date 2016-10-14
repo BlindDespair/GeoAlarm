@@ -1,4 +1,4 @@
-<com.example.geoalarm.MapWrapperLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.geoalarm.map.MapWrapperLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/map_relative_layout"
     android:layout_width="match_parent"
@@ -8,18 +8,29 @@
         xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
         android:layout_height="match_parent" android:id="@+id/map" tools:context=".MainActivity"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        class="com.example.geoalarm.MapFragment" />
+        class="com.example.geoalarm.map.MapFragment" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/settings_button"
+        android:id="@+id/btnSettings"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:layout_toStartOf="@+id/btnSettings"
+        android:layout_alignBaseline="@+id/btnSettings"
+        android:id="@+id/tv_timer"
+        android:textSize="15dp" />
 
 
 
-</com.example.geoalarm.MapWrapperLayout>
+</com.example.geoalarm.map.MapWrapperLayout>
 

@@ -1,4 +1,4 @@
-package com.example.geoalarm;
+package com.example.geoalarm.map;
 
 /**
  * Created by Иван on 22.11.2015.

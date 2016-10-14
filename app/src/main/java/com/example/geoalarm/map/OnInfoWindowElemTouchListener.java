@@ -1,4 +1,4 @@
-package com.example.geoalarm;
+package com.example.geoalarm.map;
 
 /**
  * Created by Иван on 22.11.2015.
@@ -11,6 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 
+import com.example.geoalarm.Alarm;
 import com.google.android.gms.maps.model.Marker;
 
 public abstract class OnInfoWindowElemTouchListener implements OnTouchListener {
@@ -38,10 +39,10 @@ public abstract class OnInfoWindowElemTouchListener implements OnTouchListener {
 
     @Override
     public boolean onTouch(View vv, MotionEvent event) {
-        int width = view.getWidth();
-        int height = view.getHeight();
-        int ex = (int) event.getX();
-        int ey = (int) event.getY();
+        //int width = view.getWidth();
+        //int height = view.getHeight();
+        //int ex = (int) event.getX();
+        //int ey = (int) event.getY();
         if (0 <= event.getX() && event.getX() <= view.getWidth() &&
                 0 <= event.getY() && event.getY() <= view.getHeight()) {
             switch (event.getActionMasked()) {

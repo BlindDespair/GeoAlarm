@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Геобудильник и ремайндер</string>
+    <string name="title_activity_main">Геобудильник и ремайндер</string>
+    <string name="title_activity_alarm_alert">AlarmAlertActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_alarm_preferences">AlarmPreferencesActivity</string>
+    <string name="title_activity_pref">PrefActivity</string>
+    <string name="title_activity_alarm_preference">Настройки</string>
+    <string name="settings_button">Настройки</string>
+    <string name="not_able_to_get_location">Определение местаположения отключено</string>
+    <string name="not_able_to_get_location_alert_message">Приложение требует данные о метосположении. Пожалуйста, включите определение местоположения.</string>
+    <string name="not_able_to_get_location_alert_negative_button">Отмена</string>
+    <string name="not_able_to_get_location_alert_positive_button">Перейти в настройки</string>
+    <string name="distance">Расстояние</string>
+    <string name="kilometer">километр</string>
+    <string name="kilometers">километров</string>
+    <string name="meters">метров</string>
+    <string name="no_location_data">Нет данных о местоположении. Невозможно определить расстояние.</string>
+    <string name="warning">Предупреждение!</string>
+    <string name="warning_alert_message">Не рекомедуем устанавливать радиус срабатывания будильника меньше 1 км, если вы находитесь в транспорте. Это связано с тем, что будильник может зазвонить позже чем, вам нужно, опираясь на неточность геоданных или очень большую скорость перемещения.</string>
+    <string name="warning_alert_ok">ОК</string>
+    <string name="warning_do_not_show_again">Больше не показывать.</string>
+    <string name="alarm_trigger_distance">Радиус срабатывания будильника</string>
+    <string name="ringtone">Мелодия будильника</string>
+    <string name="vibration">Вибрация</string>
+    <string name="alarm_triggers_in">Будильник прозвучит через</string>
+    <string name="stop_alarm">Стоп</string>
+    <string name="reminder_title">Напоминание</string>
+    <string name="reminder_text_hint">Введите текст напоминания</string>
+    <string name="delay">Задержка</string>
+    <string name="cancel_button">Отмена</string>
+    <string name="save_button">Применить</string>
+    <string name="marker_reminder_default">Напоминание не установлено</string>
+    <string name="timer_alarm_delayed_for">Будильник отложен на: </string>
+    <string name="close_button">Закрыть</string>
+</resources>
