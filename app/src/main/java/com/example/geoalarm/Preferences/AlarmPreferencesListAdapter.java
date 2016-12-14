@@ -2,6 +2,7 @@ package com.example.geoalarm.Preferences;
 
 
 import android.database.Cursor;
+import android.graphics.Color;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -37,7 +38,7 @@ public class AlarmPreferencesListAdapter extends BaseAdapter implements Serializ
 //
 //			@Override
 //			public void run() {
-        Log.d("AlarmPreferenceListAdapter", "Loading Ringtones...");
+        Log.d("APreferenceListAdapter", "Loading Ringtones...");
 
         RingtoneManager ringtoneMgr = new RingtoneManager(App.getContext());
 
@@ -56,7 +57,7 @@ public class AlarmPreferencesListAdapter extends BaseAdapter implements Serializ
                 alarmTonePaths[alarmsCursor.getPosition()+1] = ringtoneMgr.getRingtoneUri(alarmsCursor.getPosition()).toString();
             }while(alarmsCursor.moveToNext());
         }
-        Log.d("AlarmPreferenceListAdapter", "Finished Loading " + alarmTones.length + " Ringtones.");
+        Log.d("APreferenceListAdapter", "Finished Loading " + alarmTones.length + " Ringtones.");
         alarmsCursor.close();
 //
 //			}
@@ -110,6 +111,7 @@ public class AlarmPreferencesListAdapter extends BaseAdapter implements Serializ
 
                 CheckedTextView checkedTextView = (CheckedTextView) convertView.findViewById(android.R.id.text1);
                 checkedTextView.setText(alarmPreference.getTitle());
+                checkedTextView.setTextColor(Color.BLACK);
                 checkedTextView.setChecked((Boolean) alarmPreference.getValue());
                 break;
             case LIST:
@@ -119,9 +121,11 @@ public class AlarmPreferencesListAdapter extends BaseAdapter implements Serializ
 
                 TextView text1 = (TextView) convertView.findViewById(android.R.id.text1);
                 text1.setTextSize(18);
+                text1.setTextColor(Color.BLACK);
                 text1.setText(alarmPreference.getTitle());
 
                 TextView text2 = (TextView) convertView.findViewById(android.R.id.text2);
+                text2.setTextColor(Color.parseColor("#cccccc"));
                 text2.setText(alarmPreference.getSummary());
                 break;
         }
